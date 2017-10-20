@@ -30,7 +30,7 @@ include makefiles/tests.make
 # ----------------------------------------------------------------------------
 # compiler
 
-CC = gcc
+CC = nvcc
 
 CC_CFLAGS = -I$(INC_DIR) 
 CC_LDFLAGS = 
