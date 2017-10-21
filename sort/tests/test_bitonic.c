@@ -3,7 +3,6 @@
 
 #include "array.h"
 #include "bitonic.h"
-#include "bitonic_cuda.h"
 
 #define N 10
 
