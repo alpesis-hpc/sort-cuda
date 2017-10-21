@@ -35,11 +35,11 @@ $(BUILD_TESTS_DIR)/% : $(BUILD_TESTS_DIR)/%.o
 	@echo "$(RED)Linking $@ $(NC)"
 	$(CC) -o $@ $^ $(SRC_OBJECTS) $(TESTS_CFLAGS) $(TESTS_LDFLAGS)
 
-# CUDA
 $(BUILD_TESTS_DIR)/%.o : $(TESTS_DIR)/%.c
 	@echo "$(RED)Compiling $< $(NC)"
 	$(CC) -c $< -o $@ $(TESTS_CFLAGS)
 
+# CUDA
 $(BUILD_TESTS_DIR)/%.o : $(TESTS_DIR)/%.cu
 	@echo "$(RED)Compiling $< $(NC)"
 	$(CC) -c $< -o $@ $(TESTS_CFLAGS)
